@@ -7,6 +7,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: silabs
       url-base: https://github.com/siliconlabssoftware
+    - name: evgenii
+      url-base: git@github.com:kedMertens
 
   projects:
     - name: hal_silabs
@@ -18,8 +20,8 @@ manifest:
       revision: 6024c415bf050c09e3990bddb6d53d3b4990a2b1
       path: modules/crypto/mbedtls
     - name: zephyr
-      remote: zephyrproject-rtos
-      revision: 8b80c209446d8bbe9b454b91773ace14ac40d4c2
+      remote: evgenii
+      revision: e384c53d37532d780dbc3ca7d117851af0d8bfca
       import:
         # By using name-allowlist we can clone only the modules that are
         # strictly needed by the application.
